@@ -1,6 +1,7 @@
 import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { BuildPaths } from "./types";
 
 export const getPlugins = (
@@ -12,5 +13,6 @@ export const getPlugins = (
       template: paths.html,
     }),
     new ForkTsCheckerWebpackPlugin(),
+    new MiniCssExtractPlugin(),
   ];
 };

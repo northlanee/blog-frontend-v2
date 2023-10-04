@@ -12,6 +12,13 @@
         "useBuiltIns": "entry",
         "targets": "> 0.25%, not dead"
       }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
     ]
-  ]
+  ],
+  "plugins": ["@babel/plugin-transform-class-properties"]
 }

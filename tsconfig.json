@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true
   },
   "include": ["src"]
